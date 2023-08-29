@@ -29,6 +29,7 @@ namespace WindowsFormsApp1
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.txtnumA = new System.Windows.Forms.TextBox();
             this.txtnumB = new System.Windows.Forms.TextBox();
             this.txtresultado = new System.Windows.Forms.TextBox();
@@ -48,146 +49,94 @@ namespace WindowsFormsApp1
             // 
             // txtnumA
             // 
-            this.txtnumA.Location = new System.Drawing.Point(70, 103);
+            resources.ApplyResources(this.txtnumA, "txtnumA");
             this.txtnumA.Name = "txtnumA";
-            this.txtnumA.Size = new System.Drawing.Size(100, 22);
-            this.txtnumA.TabIndex = 0;
             // 
             // txtnumB
             // 
-            this.txtnumB.Location = new System.Drawing.Point(70, 214);
+            resources.ApplyResources(this.txtnumB, "txtnumB");
             this.txtnumB.Name = "txtnumB";
-            this.txtnumB.Size = new System.Drawing.Size(100, 22);
-            this.txtnumB.TabIndex = 1;
             // 
             // txtresultado
             // 
-            this.txtresultado.Location = new System.Drawing.Point(649, 361);
+            resources.ApplyResources(this.txtresultado, "txtresultado");
             this.txtresultado.Name = "txtresultado";
-            this.txtresultado.Size = new System.Drawing.Size(100, 22);
-            this.txtresultado.TabIndex = 2;
             // 
             // btnsuma
             // 
-            this.btnsuma.AutoSize = true;
-            this.btnsuma.Location = new System.Drawing.Point(70, 303);
+            resources.ApplyResources(this.btnsuma, "btnsuma");
             this.btnsuma.Name = "btnsuma";
-            this.btnsuma.Size = new System.Drawing.Size(65, 21);
-            this.btnsuma.TabIndex = 3;
             this.btnsuma.TabStop = true;
-            this.btnsuma.Text = "Suma";
             this.btnsuma.UseVisualStyleBackColor = true;
             // 
             // btnResta
             // 
-            this.btnResta.AutoSize = true;
-            this.btnResta.Location = new System.Drawing.Point(70, 361);
+            resources.ApplyResources(this.btnResta, "btnResta");
             this.btnResta.Name = "btnResta";
-            this.btnResta.Size = new System.Drawing.Size(66, 21);
-            this.btnResta.TabIndex = 4;
             this.btnResta.TabStop = true;
-            this.btnResta.Text = "Resta";
             this.btnResta.UseVisualStyleBackColor = true;
             // 
             // btnmultiplicar
             // 
-            this.btnmultiplicar.AutoSize = true;
-            this.btnmultiplicar.Location = new System.Drawing.Point(230, 303);
+            resources.ApplyResources(this.btnmultiplicar, "btnmultiplicar");
             this.btnmultiplicar.Name = "btnmultiplicar";
-            this.btnmultiplicar.Size = new System.Drawing.Size(113, 21);
-            this.btnmultiplicar.TabIndex = 5;
             this.btnmultiplicar.TabStop = true;
-            this.btnmultiplicar.Text = "Multiplicacion";
             this.btnmultiplicar.UseVisualStyleBackColor = true;
             // 
             // btndivision
             // 
-            this.btndivision.AutoSize = true;
-            this.btndivision.Location = new System.Drawing.Point(230, 361);
+            resources.ApplyResources(this.btndivision, "btndivision");
             this.btndivision.Name = "btndivision";
-            this.btndivision.Size = new System.Drawing.Size(78, 21);
-            this.btndivision.TabIndex = 6;
             this.btndivision.TabStop = true;
-            this.btndivision.Text = "Division";
             this.btndivision.UseVisualStyleBackColor = true;
             // 
             // IngreDatos
             // 
-            this.IngreDatos.AutoSize = true;
-            this.IngreDatos.Location = new System.Drawing.Point(80, 26);
+            resources.ApplyResources(this.IngreDatos, "IngreDatos");
             this.IngreDatos.Name = "IngreDatos";
-            this.IngreDatos.Size = new System.Drawing.Size(116, 17);
-            this.IngreDatos.TabIndex = 7;
-            this.IngreDatos.Text = "Ingreso de Datos";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(70, 80);
+            resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(71, 17);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "Numero A";
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(70, 174);
+            resources.ApplyResources(this.label3, "label3");
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(71, 17);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "Numero B";
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(70, 268);
+            resources.ApplyResources(this.label4, "label4");
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(89, 17);
-            this.label4.TabIndex = 10;
-            this.label4.Text = "Operaciones";
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(649, 319);
+            resources.ApplyResources(this.label5, "label5");
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(72, 17);
-            this.label5.TabIndex = 11;
-            this.label5.Text = "Resultado";
             // 
             // btnCalcular
             // 
-            this.btnCalcular.Location = new System.Drawing.Point(614, 62);
+            resources.ApplyResources(this.btnCalcular, "btnCalcular");
             this.btnCalcular.Name = "btnCalcular";
-            this.btnCalcular.Size = new System.Drawing.Size(75, 23);
-            this.btnCalcular.TabIndex = 12;
-            this.btnCalcular.Text = "Calcular";
             this.btnCalcular.UseVisualStyleBackColor = true;
             // 
             // btnLimpiar
             // 
-            this.btnLimpiar.Location = new System.Drawing.Point(614, 117);
+            resources.ApplyResources(this.btnLimpiar, "btnLimpiar");
             this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(75, 23);
-            this.btnLimpiar.TabIndex = 13;
-            this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.UseVisualStyleBackColor = true;
             // 
             // btnsalir
             // 
-            this.btnsalir.Location = new System.Drawing.Point(614, 174);
+            resources.ApplyResources(this.btnsalir, "btnsalir");
             this.btnsalir.Name = "btnsalir";
-            this.btnsalir.Size = new System.Drawing.Size(75, 23);
-            this.btnsalir.TabIndex = 14;
-            this.btnsalir.Text = "Salir";
             this.btnsalir.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnsalir);
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.btnCalcular);
@@ -204,7 +153,7 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.txtnumB);
             this.Controls.Add(this.txtnumA);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.ResumeLayout(false);
             this.PerformLayout();
 
