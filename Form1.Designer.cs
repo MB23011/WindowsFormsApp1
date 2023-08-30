@@ -30,7 +30,6 @@ namespace WindowsFormsApp1
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.txtnumA = new System.Windows.Forms.TextBox();
             this.txtnumB = new System.Windows.Forms.TextBox();
             this.txtresultado = new System.Windows.Forms.TextBox();
             this.btnsuma = new System.Windows.Forms.RadioButton();
@@ -45,12 +44,14 @@ namespace WindowsFormsApp1
             this.btnCalcular = new System.Windows.Forms.Button();
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.btnsalir = new System.Windows.Forms.Button();
+            this.lael1 = new System.Windows.Forms.Label();
+            this.txtnom = new System.Windows.Forms.TextBox();
+            this.txtnomUsu = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtnumA1 = new System.Windows.Forms.NumericUpDown();
+            this.txtnumA = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.txtnumA1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // txtnumA
-            // 
-            resources.ApplyResources(this.txtnumA, "txtnumA");
-            this.txtnumA.Name = "txtnumA";
             // 
             // txtnumB
             // 
@@ -136,10 +137,46 @@ namespace WindowsFormsApp1
             this.btnsalir.UseVisualStyleBackColor = true;
             this.btnsalir.Click += new System.EventHandler(this.btnsalir_Click);
             // 
+            // lael1
+            // 
+            resources.ApplyResources(this.lael1, "lael1");
+            this.lael1.Name = "lael1";
+            // 
+            // txtnom
+            // 
+            resources.ApplyResources(this.txtnom, "txtnom");
+            this.txtnom.Name = "txtnom";
+            // 
+            // txtnomUsu
+            // 
+            resources.ApplyResources(this.txtnomUsu, "txtnomUsu");
+            this.txtnomUsu.Name = "txtnomUsu";
+            // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.Name = "label1";
+            // 
+            // txtnumA1
+            // 
+            resources.ApplyResources(this.txtnumA1, "txtnumA1");
+            this.txtnumA1.Name = "txtnumA1";
+            // 
+            // txtnumA
+            // 
+            resources.ApplyResources(this.txtnumA, "txtnumA");
+            this.txtnumA.Name = "txtnumA";
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.txtnumA);
+            this.Controls.Add(this.txtnumA1);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtnomUsu);
+            this.Controls.Add(this.txtnom);
+            this.Controls.Add(this.lael1);
             this.Controls.Add(this.btnsalir);
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.btnCalcular);
@@ -154,17 +191,16 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.btnsuma);
             this.Controls.Add(this.txtresultado);
             this.Controls.Add(this.txtnumB);
-            this.Controls.Add(this.txtnumA);
             this.Name = "Form1";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
+            this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.txtnumA1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox txtnumA;
         private System.Windows.Forms.TextBox txtnumB;
         private System.Windows.Forms.TextBox txtresultado;
         private System.Windows.Forms.RadioButton btnsuma;
@@ -179,6 +215,12 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Button btnCalcular;
         private System.Windows.Forms.Button btnLimpiar;
         private System.Windows.Forms.Button btnsalir;
+        private System.Windows.Forms.Label lael1;
+        private System.Windows.Forms.TextBox txtnom;
+        private System.Windows.Forms.TextBox txtnomUsu;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.NumericUpDown txtnumA1;
+        private System.Windows.Forms.TextBox txtnumA;
     }
 }
 
