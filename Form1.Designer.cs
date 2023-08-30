@@ -120,18 +120,21 @@ namespace WindowsFormsApp1
             resources.ApplyResources(this.btnCalcular, "btnCalcular");
             this.btnCalcular.Name = "btnCalcular";
             this.btnCalcular.UseVisualStyleBackColor = true;
+            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
             // 
             // btnLimpiar
             // 
             resources.ApplyResources(this.btnLimpiar, "btnLimpiar");
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
             // btnsalir
             // 
             resources.ApplyResources(this.btnsalir, "btnsalir");
             this.btnsalir.Name = "btnsalir";
             this.btnsalir.UseVisualStyleBackColor = true;
+            this.btnsalir.Click += new System.EventHandler(this.btnsalir_Click);
             // 
             // Form1
             // 

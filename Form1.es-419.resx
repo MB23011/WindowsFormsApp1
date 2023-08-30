@@ -131,18 +131,24 @@
     <value>526, 303</value>
   </data>
   <data name="btnCalcular.Location" type="System.Drawing.Point, System.Drawing">
-    <value>573, 65</value>
+    <value>504, 65</value>
   </data>
   <data name="btnCalcular.Size" type="System.Drawing.Size, System.Drawing">
     <value>116, 32</value>
   </data>
+  <data name="btnLimpiar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>504, 129</value>
+  </data>
   <data name="btnLimpiar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>116, 36</value>
+    <value>116, 31</value>
   </data>
   <data name="btnsalir.Location" type="System.Drawing.Point, System.Drawing">
-    <value>573, 174</value>
+    <value>504, 189</value>
   </data>
   <data name="btnsalir.Size" type="System.Drawing.Size, System.Drawing">
     <value>116, 32</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>709, 432</value>
   </data>
 </root>
