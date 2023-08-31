@@ -40,7 +40,9 @@ namespace WindowsFormsApp1
                 Resultado = A * B;
             if (btndivision.Checked == true)
                 Resultado = A / B;
-           
+            else
+                MessageBox.Show("Seleccione una opcion para realizar la operacion ", "Error" ,
+                 MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             //Escribir Resultado
             txtresultado.Text = Resultado.ToString();
