@@ -26,7 +26,8 @@ namespace WindowsFormsApp1
             string Nombre = txtnom.Text;
 
             //Captura de Datos
-            A = Convert.ToDouble(txtnumA1.Text);
+            A = Convert.ToDouble(txtnumA.Text);
+         
             B = Convert.ToDouble(txtnumB.Text);
             
 
@@ -45,17 +46,19 @@ namespace WindowsFormsApp1
             txtresultado.Text = Resultado.ToString();
             txtnomUsu.Text = Nombre.ToString(); //txtnomUsu es la salidad de txtnom
 
-            //MessageBox.Show("Usuario: " + Nombre + " "  + "Los datos ingresados son: " + A + " y " + B + " " + "Su resultado es: " + Resultado);
+           
         }
 
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
-            // txtnumA.Clear();
-           txtnom.Clear(); //Limpia el txt Nombre
-           txtnumB.Clear(); //Limpia el txt Numero A
-           txtresultado.Clear(); //Limpia el txt Numero B
-
-          // txtnumA1.Value = txtnumA1.Minimum; //Reduce el NumericUpDown a su valor mas minimo = 0
+            
+           txtnom.Clear(); //Limpia el txt nom
+           txtnumA.Clear(); //Limpia el txt Nombre A
+           txtnumB.Clear(); //Limpia el txt Numero B
+           txtresultado.Clear(); //Limpia el txt Resultado
+           txtnomUsu.Clear(); //Limpia el txt NomUsu
+           
+          
         }
 
         private void btnsalir_Click(object sender, EventArgs e)
@@ -63,9 +66,21 @@ namespace WindowsFormsApp1
             this.Close(); //Cierra la aplicacion
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e) 
         {
             //le di clic por accidente
+        }
+
+        private void txtnumA_KeyPress(object sender, KeyPressEventArgs e) 
+        {
+            if ((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("Ingrese Solo Numeros Mayores a 0", "Error",
+               MessageBoxButtons.OK, MessageBoxIcon.Error);
+                e.Handled = true;
+                return;
+            }
+
         }
     }
 }

@@ -48,10 +48,7 @@ namespace WindowsFormsApp1
             this.txtnom = new System.Windows.Forms.TextBox();
             this.txtnomUsu = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtnumA1 = new System.Windows.Forms.NumericUpDown();
             this.txtnumA = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.txtnumA1)).BeginInit();
             this.SuspendLayout();
             // 
             // txtnumB
@@ -158,28 +155,17 @@ namespace WindowsFormsApp1
             resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
             // 
-            // txtnumA1
-            // 
-            resources.ApplyResources(this.txtnumA1, "txtnumA1");
-            this.txtnumA1.Name = "txtnumA1";
-            // 
             // txtnumA
             // 
             resources.ApplyResources(this.txtnumA, "txtnumA");
             this.txtnumA.Name = "txtnumA";
-            // 
-            // label6
-            // 
-            resources.ApplyResources(this.label6, "label6");
-            this.label6.Name = "label6";
+            this.txtnumA.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtnumA_KeyPress);
             // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.txtnumA);
-            this.Controls.Add(this.txtnumA1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtnomUsu);
             this.Controls.Add(this.txtnom);
@@ -201,7 +187,6 @@ namespace WindowsFormsApp1
             this.Name = "Form1";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.txtnumA1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -226,9 +211,7 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.TextBox txtnom;
         private System.Windows.Forms.TextBox txtnomUsu;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.NumericUpDown txtnumA1;
         private System.Windows.Forms.TextBox txtnumA;
-        private System.Windows.Forms.Label label6;
     }
 }
 
