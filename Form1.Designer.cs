@@ -50,6 +50,7 @@ namespace WindowsFormsApp1
             this.label1 = new System.Windows.Forms.Label();
             this.txtnumA1 = new System.Windows.Forms.NumericUpDown();
             this.txtnumA = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.txtnumA1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -167,10 +168,16 @@ namespace WindowsFormsApp1
             resources.ApplyResources(this.txtnumA, "txtnumA");
             this.txtnumA.Name = "txtnumA";
             // 
+            // label6
+            // 
+            resources.ApplyResources(this.label6, "label6");
+            this.label6.Name = "label6";
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.txtnumA);
             this.Controls.Add(this.txtnumA1);
             this.Controls.Add(this.label1);
@@ -221,6 +228,7 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.NumericUpDown txtnumA1;
         private System.Windows.Forms.TextBox txtnumA;
+        private System.Windows.Forms.Label label6;
     }
 }
 
