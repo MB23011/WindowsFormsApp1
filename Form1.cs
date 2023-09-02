@@ -40,7 +40,18 @@ namespace WindowsFormsApp1
            else   if (btnmultiplicar.Checked == true)
                 Resultado = A * B;
            else if (btndivision.Checked == true)
-                Resultado = A / B;
+            {
+                if(B==0){
+                    MessageBox.Show("No se puede dividir entre 0", "Error Valor Invalido",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    txtnumB.Focus();
+                }
+                else
+                {
+                    Resultado = A / B;
+                }
+            }
+                
             else
                 MessageBox.Show("Seleccione una opcion para realizar la operacion ", "Error" ,
                  MessageBoxButtons.OK, MessageBoxIcon.Error);
