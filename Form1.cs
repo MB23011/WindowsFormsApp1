@@ -59,8 +59,11 @@ namespace WindowsFormsApp1
            txtnumB.Clear(); //Limpia el txt Numero B
            txtresultado.Clear(); //Limpia el txt Resultado
            txtnomUsu.Clear(); //Limpia el txt NomUsu
-           
-          
+            btndivision.Checked = false;//Limpiamos lo checkbox
+            btnResta.Checked = false;//Limpiamos lo checkbox
+            btnsuma.Checked = false;//Limpiamos lo checkbox
+            btnmultiplicar.Checked = false;//Limpiamos lo checkbox
+
         }
 
         private void btnsalir_Click(object sender, EventArgs e)
@@ -77,7 +80,7 @@ namespace WindowsFormsApp1
         {
             if ((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))
             {
-                MessageBox.Show("Ingrese Solo Numeros Mayores a 0", "Error",
+                MessageBox.Show("Ingrese un número", "Error Valor Invalido",
                MessageBoxButtons.OK, MessageBoxIcon.Error);
                 e.Handled = true;
                 return;

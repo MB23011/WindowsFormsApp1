@@ -55,6 +55,7 @@ namespace WindowsFormsApp1
             // 
             resources.ApplyResources(this.txtnumB, "txtnumB");
             this.txtnumB.Name = "txtnumB";
+            this.txtnumB.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtnumA_KeyPress);
             // 
             // txtresultado
             // 
