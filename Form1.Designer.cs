@@ -55,6 +55,7 @@ namespace WindowsFormsApp1
             // 
             resources.ApplyResources(this.txtnumB, "txtnumB");
             this.txtnumB.Name = "txtnumB";
+            this.txtnumB.TextChanged += new System.EventHandler(this.txtnumB_TextChanged);
             this.txtnumB.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtnumA_KeyPress);
             // 
             // txtresultado
@@ -145,6 +146,7 @@ namespace WindowsFormsApp1
             // 
             resources.ApplyResources(this.txtnom, "txtnom");
             this.txtnom.Name = "txtnom";
+            this.txtnom.TextChanged += new System.EventHandler(this.txtnom_TextChanged);
             // 
             // txtnomUsu
             // 
@@ -160,6 +162,7 @@ namespace WindowsFormsApp1
             // 
             resources.ApplyResources(this.txtnumA, "txtnumA");
             this.txtnumA.Name = "txtnumA";
+            this.txtnumA.TextChanged += new System.EventHandler(this.txtnumA_TextChanged);
             this.txtnumA.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtnumA_KeyPress);
             // 
             // Form1

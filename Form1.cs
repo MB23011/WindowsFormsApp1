@@ -15,6 +15,7 @@ namespace WindowsFormsApp1
         public Form1()
         {
             InitializeComponent();
+            txtnom.Focus();
         }
 
         private void btnCalcular_Click(object sender, EventArgs e)
@@ -34,11 +35,11 @@ namespace WindowsFormsApp1
             //Condicionales
             if (btnsuma.Checked == true)
                 Resultado = A + B;
-            if (btnResta.Checked == true)
+           else  if (btnResta.Checked == true)   //Modifique estructura de los condicionales 
                 Resultado = A - B;
-            if (btnmultiplicar.Checked == true)
+           else   if (btnmultiplicar.Checked == true)
                 Resultado = A * B;
-            if (btndivision.Checked == true)
+           else if (btndivision.Checked == true)
                 Resultado = A / B;
             else
                 MessageBox.Show("Seleccione una opcion para realizar la operacion ", "Error" ,
@@ -73,7 +74,7 @@ namespace WindowsFormsApp1
 
         private void Form1_Load(object sender, EventArgs e) 
         {
-            //le di clic por accidente
+            btnCalcular.Enabled = false;
         }
 
         private void txtnumA_KeyPress(object sender, KeyPressEventArgs e) 
@@ -86,6 +87,28 @@ namespace WindowsFormsApp1
                 return;
             }
 
+        }
+
+
+        private void validarCampoVacio() //Comprueba si los campos estan vacios :v
+        {
+            var vr = !string.IsNullOrEmpty(txtnumA.Text) && !string.IsNullOrEmpty(txtnumB.Text) && !string.IsNullOrEmpty(txtnom.Text);
+            btnCalcular.Enabled = vr;
+        }
+
+        private void txtnom_TextChanged(object sender, EventArgs e)
+        {
+            validarCampoVacio();
+        }
+
+        private void txtnumA_TextChanged(object sender, EventArgs e)
+        {
+            validarCampoVacio();
+        }
+
+        private void txtnumB_TextChanged(object sender, EventArgs e)
+        {
+            validarCampoVacio();
         }
     }
 }
