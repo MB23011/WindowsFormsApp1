@@ -80,7 +80,7 @@ namespace WindowsFormsApp1
 
         private void btnsalir_Click(object sender, EventArgs e)
         {
-            this.Close(); //Cierra la aplicacion
+            
         }
 
         private void Form1_Load(object sender, EventArgs e) 
@@ -115,6 +115,7 @@ namespace WindowsFormsApp1
         private void txtnumA_TextChanged(object sender, EventArgs e)
         {
             validarCampoVacio();
+
         }
 
         private void txtnumB_TextChanged(object sender, EventArgs e)
